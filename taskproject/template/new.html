@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a href="" ><img src="{% static 'img/banner.jpg' %}" style="height:600px;width:1250px;"></a>
+</div>
+    <div>
+        <a href="{% url 'tasks:form' %}" class="btn btn-secondary"><b>Create a form</b></a>
+
+</div>
+</body>
+</html>
+{% endblock %}

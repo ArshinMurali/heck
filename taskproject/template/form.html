@@ -1,0 +1,89 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+  <style>
+    h1{text-align:center;border:1px solid black}
+    body{padding:10px;}
+    input{padding:6px;}
+    select{padding:6px;}
+
+  </style>
+</head>
+<h1>Form</h1>
+<body>
+<form method="get" action="task_four">
+  <label>Name:</label>
+  <input style="margin-left:80px;" type="text" name="name" placeholder="Enter your name"><br>
+    <label>D.O.B:</label>
+  <input style="margin-left:77px;" type="date" name="date" placeholder="Enter your dob"><br>
+  <label>Age:</label>
+  <input style="margin-left:92px;" type="number" name="age" placeholder="Enter your age"><br>
+    <label>Gender:</label>
+  <input style="margin-left:70px;" type="radio" name="gender" >Male
+  <input type="radio" name="gender" >Female
+  <input type="radio" name="gender" >Other<br>
+    <label>Phone number:</label>
+  <input style="margin-left:26px;" type="text" name="pnumber" placeholder="Enter your phone number"><br>
+    <label>Mail id:</label>
+  <input style="margin-left:72px;" type="text" name="name" placeholder="Enter your email id"><br>
+    <label>Address:</label>
+  <input style="margin-left:66px;" type="text" name="address" placeholder="Enter your address"><br>
+
+<!--  <select name="District">-->
+<!--    <option value="Thrissur">Thrissur</option>-->
+<!--    <option value="Ernakulam">Ernakulam</option>-->
+<!--    <option value="Trivandrum">Trivandrum</option>-->
+<!--    <option value="Kozhikode">Kozhikode</option>-->
+<!--  </select><br>-->
+
+      <label>District:</label>
+  <select style="margin-left:70px;" class="form-control" name="" id="District">
+    <option value="">--Select your district--</option>
+    <option value="Thrissur">Thrissur</option>
+    <option value="Ernakulam">Ernakulam</option>
+    <option value="Trivandrum">Trivandrum</option>
+    <option value="Kozhikode">Kozhikode</option>
+  </select>
+
+
+  <select class="form-control" name="" id="Sub areas">
+     <option value="">--Select your Sub area--</option>
+    <option value="Chalakudy">Chalakudy</option>
+    <option value="Kunnamkulam">Kunnamkulam</option>
+    <option value="Mukundapuram">Mukundapuram</option>
+    <option value="Kochi">Kochi</option>
+    <option value="Aluva">Aluva</option>
+    <option value="Paravur">Paravur</option>
+    <option value="Varkala">Varkala</option>
+    <option value="Neyyattinkara">Neyyattinkara</option>
+    <option value="Nedumangad">Nedumangad</option>
+    <option value="Kottarakkara">Kottarakkara</option>
+    <option value="Karunagappally">Karunagappally</option>
+    <option value="Punalur">Punalur<option>
+</select><br>
+
+
+
+  <label>Account type:</label>
+  <select style="margin-left:32px;" name="Account type">
+    <option value="Savings account">Savings account</option>
+    <option value="Current account">Current account</option>
+    <option value="Personal account">Personal account</option>
+  </select><br>
+    <label>Materials provide:</label>
+  <input type="checkbox" name="Debit card">Debit card
+   <input type="checkbox" name="Credit card">Credit card
+   <input type="checkbox" name="Cheque book">Cheque book<br>
+<div style="padding:4px;">
+  <input type="submit" style="background-color:DarkCyan;color:white;padding:5px;"><br>
+</div>
+<div style="padding:4px;">
+  <input type="button" value="Logout" style="background-color:Gray;color:white;padding:5px;">
+</div>
+</form>
+</body>
+</html>

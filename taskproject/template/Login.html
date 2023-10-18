@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+<style>
+    h1{color:white;border:1px solid white;background-color:black;}
+    body{background-color:black;padding:20px;}
+    label{color:white;}
+    a{color:white;}
+    input{padding:4px;}
+</style>
+</head>
+<body>
+<form method="get" action="task_three">
+<h1 style="text-align:center;">Login</h1>
+<label><b>Username:</b></label>
+<input type="text" name="Username" placeholder="Enter your username"><br>
+<label><b>Password:</b></label>
+<input style="margin-left:3.5px;" type="password" name="Password" placeholder="Enter your password"><br>
+<input type="submit" name="Submit" style="color:black;background-color:white;border-radius:9px;padding:9px;" ><br>
+<a href="{% url 'tasks:register' %}">click here to register.</a>
+</form>
+</body>
+</html>
